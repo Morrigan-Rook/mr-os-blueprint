@@ -1,0 +1,18 @@
+{
+  "name": "mr-os-blueprint",
+  "version": "0.1.0",
+  "description": "A blueprint for running a firm where people and AI agents work together: roles as code, the agent proposes and a person approves, gates, versioning and capped engines. From Morrigan Rook's MR OS.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "private": false,
+  "engines": { "node": ">=22.13" },
+  "scripts": {
+    "demo": "node --disable-warning=ExperimentalWarning reference/src/demo.ts",
+    "test": "node --disable-warning=ExperimentalWarning --test \"reference/test/*.test.ts\"",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^24.5.2",
+    "typescript": "^5.9.2"
+  }
+}
